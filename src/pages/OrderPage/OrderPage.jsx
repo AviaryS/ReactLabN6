@@ -3,7 +3,7 @@ import React from 'react';
 function OrderPage({order}) {
     return (
         <div>
-            <h1>Заказы</h1>
+            {order.length !== 0 && <h1>Заказов нет</h1>}
             {order.map((dog) => {
                 return (
                     <div className='order'>
