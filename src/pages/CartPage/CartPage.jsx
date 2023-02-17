@@ -6,7 +6,7 @@ function CartPage({cart, setCart, order, setOrder}) {
     const [count, setCount] = useState(1);
     function checkout() {
         setOrder([...order, cart]);
-        alert('Товар успешно оформлен');
+        alert('Заказ оформлен');
         navigate('/order');
         setCart([]);
     }
