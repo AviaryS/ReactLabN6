@@ -3,15 +3,15 @@ import React from 'react';
 function OrderPage({order}) {
     return (
         <div>
-            {order.length !== 0 && <h1>Заказов нет</h1>}
-            {order.map((dog) => {
+            {order.map((dog, index) => {
                 return (
                     <div className='order'>
-                        <h4>Заказ</h4>
+                        <h3>Заказ #{index + 1}</h3>
                         {dog.map((item) => {
                             return (
                                 <div>
                                     {item.name}
+                                    {item.count}
                                 </div>
                             )
                         })}
