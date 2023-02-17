@@ -7,7 +7,7 @@ function CartPage({cart, setCart, order, setOrder}) {
     function checkout() {
         setOrder([...order, cart]);
         alert('Товар успешно оформлен');
-        navigate('/');
+        navigate('/order');
         setCart([]);
     }
 
